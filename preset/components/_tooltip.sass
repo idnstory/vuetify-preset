@@ -1,0 +1,35 @@
+.v-tooltip__content
+  border-color: $tooltip-background-color
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12)
+  &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    border-color: transparent
+    border-style: solid
+
+  &.arrow-left:before
+    right: -5px
+    top: 50%
+    margin-top: -5px
+    border-width: 5px 0 5px 5px
+    border-left-color: inherit
+  &.arrow-right:before
+    top: 50%
+    left: -5px
+    margin-top: -5px
+    border-width: 5px 5px 5px 0
+    border-right-color: inherit
+  &.arrow-bottom:before
+    bottom: -5px
+    left: 50%
+    margin-left: -5px
+    border-width: 5px 5px 0
+    border-top-color: inherit
+  &.arrow-top:before
+    top: -5px
+    left: 50%
+    margin-left: -5px
+    border-width: 0 5px 5px 5px
+    border-bottom-color: inherit

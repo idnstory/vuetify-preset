@@ -1,0 +1,14 @@
+.v-alert__icon
+  +ltr()
+    margin-right: $alert-icon-margin !important
+
+  +rtl()
+    margin-left: $alert-icon-margin !important
+
+.v-alert--outlined
+  &.success--text
+    box-shadow: 0 2px 4px 0 rgba(81, 207, 102, 0.3)
+    border-color: map-get($hzc-green, 'green-00') !important
+  &.error--text
+    box-shadow: 0 2px 4px 0 rgba(255, 107, 107, 0.3)
+    border-color: map-get($hzc-red, 'red-dark') !important

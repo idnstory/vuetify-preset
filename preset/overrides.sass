@@ -1,0 +1,44 @@
+@import './variables'
+@import './components/_index'
+
+.gnb
+  .v-toolbar__items
+    .v-btn--text
+      &.v-btn:before
+        background-color: transparent
+      .v-btn__content
+        border-bottom: 2px solid transparent
+    .v-btn--text:hover
+      .v-btn__content
+        border-bottom: 2px solid var(--v-primary-base)
+
+  &.inverted.active
+    .v-toolbar__items
+      .v-btn--text:hover
+        .v-btn__content
+          border-bottom: 2px solid var(--v-primary-base)
+  &.inverted
+    .v-toolbar__items
+      .v-btn--text:hover
+        .v-btn__content
+          border-bottom: 2px solid white
+
+.hz-icon
+  fill: currentColor
+  path
+    fill: currentColor
+  g
+    fill: currentColor
+  rect:
+    fill: currentColor
+
+.v-application
+  .text-button
+    font-size: #{14/$hz-font-size-root}rem !important
+    letter-spacing: -.35px !important
+    font-family: $body-font-family !important
+
+.suffix--secondary
+  .v-text-field__suffix
+    font-weight: bold
+    color: var(--v-secondary-base)

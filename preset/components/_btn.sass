@@ -1,0 +1,24 @@
+.v-btn 
+  font-weight: bold !important
+  
+  &--depressed
+    letter-spacing: -0.35px
+    border: 1px solid rgb(206, 212, 218) !important
+
+  &:not(.v-btn--round)
+    @each $name, $size in $btn-sizes
+      &.v-size--#{$name}
+        padding: 0 #{$size / 4}px
+
+.theme--light
+  &.v-btn.v-btn--disabled
+    &:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined)
+      background-color: #ffe3d6 !important
+      border-color: #ffe3d6 !important
+
+
++theme(v-btn) using ($material)
+  &.v-btn--disabled.v-btn--depressed
+    &:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined)
+      background-color: #f8f9fa !important
+      border-color: #f1f3f5 !important

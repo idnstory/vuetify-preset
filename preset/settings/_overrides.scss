@@ -1,0 +1,243 @@
+// Preset variables
+$body-font-family: 'Spoqa Han Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+$font-size-root: $hz-font-size;
+$label-font-size: $hz-font-size;
+$label-line-height: 1.43;
+$label-letter-spacing: -.35px;
+
+$container-max-widths: (
+  'lg': 1170px,
+  'xl': 2080px
+);
+
+// 여기를 변경하려면 preset/index.js 에서도 변경해야함.
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 600px,
+  'md': 960px,
+  'lg': 1170px - 16px,
+  'xl': 2080px - 16px
+);
+
+$tooltip-background-color: #868e96;
+
+$input-slot-margin-bottom: 4px;
+$input-font-size: $hz-font-size;
+$input-label-height: $hz-font-size;
+$input-label-letter-spacing: $hz-font-size;
+$heading-font-family: $body-font-family;
+
+$input-icon-width: 16px;
+$input-icon-min-width: 16px;
+
+// $border-radius-root: 0;
+// $btn-font-weight: 700;
+// $btn-outline-border-width: 2px;
+// $dialog-elevation: 0;
+$btn-letter-spacing: -.35px;
+
+$text-field-details-margin-bottom: 0;
+$text-field-filled-full-width-outlined-slot-min-height: 48px;
+$text-field-enclosed-prepend-append-margin-top: 12px;
+
+$card-subtitle-padding: 24px;
+
+$messages-font-size: 14px;
+
+$headings: (
+  'h1':( // display-4
+    'size': #{48 / $hz-font-size-root}rem,
+    'weight': 600,
+    'line-height': 1.25,
+    'letter-spacing': -2.35px,
+    'font-family': $heading-font-family,
+    'text-transform': false
+  ),
+  'h2':( // display-3
+    'size': #{40 / $hz-font-size-root}rem,
+    'weight': 600,
+    'line-height': 1.25,
+    'letter-spacing': -2.1px,
+    'font-family': $heading-font-family,
+    'text-transform': false
+  ),
+  'h3':( // display-2
+    'size': #{32 / $hz-font-size-root}rem,
+    'weight': 600,
+    'line-height': 1.25,
+    'letter-spacing': -1.3px,
+    'font-family': $heading-font-family,
+    'text-transform': false
+  ),
+  'h4':( // display-1
+    'size': #{26 / $hz-font-size-root}rem,
+    'weight': 600,
+    'line-height': 1.31,
+    'letter-spacing': -1px,
+    'font-family': $heading-font-family,
+    'text-transform': false
+  ),
+  'h5':( // headline
+    'size': #{22 / $hz-font-size-root}rem,
+    'weight': 500,
+    'line-height': 1.36,
+    'letter-spacing': -0.9px,
+    'font-family': $heading-font-family,
+    'text-transform': false
+  ),
+  'h6':( // title
+    'size': #{20 / $hz-font-size-root}rem,
+    'weight': 700,
+    'line-height': 1.4,
+    'letter-spacing': -0.8px,
+    'font-family': $heading-font-family,
+    'text-transform': false
+  ),
+  'subtitle-1':(
+    'size': #{16 / $hz-font-size-root}rem,
+    'weight': 700,
+    'line-height': 1.43,
+    'letter-spacing': -0.35px,
+    'font-family': $heading-font-family,
+    'text-transform': false
+  ),
+  'subtitle-2':(
+    'size': #{15 / $hz-font-size-root}rem,
+    'weight': 700,
+    'line-height': 1.077,
+    'letter-spacing': normal,
+    'font-family': $heading-font-family,
+    'text-transform': false
+  ),
+  'subtitle-3':(
+    'size': #{14 / $hz-font-size-root}rem,
+    'weight': 700,
+    'line-height': 1.43,
+    'letter-spacing': -0.35px,
+    'font-family': $heading-font-family,
+    'text-transform': false
+  ),
+  'body-1':(
+    'size': #{20 / $hz-font-size-root}rem,
+    'weight': 400,
+    'line-height': 1.4,
+    'letter-spacing': -0.75px,
+    'font-family': $body-font-family,
+    'text-transform': false
+  ),
+  'body-2':(
+    'size': #{16 / $hz-font-size-root}rem,
+    'weight': 400,
+    'line-height': 1.5,
+    'letter-spacing': -0.7px,
+    'font-family': $body-font-family,
+    'text-transform': false
+  ),
+  'body-3':(
+    'size': #{14 / $hz-font-size-root}rem,
+    'weight': 400,
+    'line-height': 1.57,
+    'letter-spacing': -0.58px,
+    'font-family': $body-font-family,
+    'text-transform': false
+  ),
+  'caption':(
+    'size': #{12 / $hz-font-size-root}rem,
+    'weight': 500,
+    'line-height': 1.33,
+    'letter-spacing': -0.35px,
+    'font-family': $body-font-family,
+    'text-transform': false
+  ),
+  // 새로 추가하는 것은 순서가 매우 중요함
+  // size, weight, line-height,
+  // letter-spacing, font-family, text-transform
+  'overline':(
+    'size': #{12 / $hz-font-size-root}rem,
+    'weight': 400,
+    'line-height': 1.33,
+    'letter-spacing': -0.35px,
+    'font-family': $body-font-family,
+    'text-transform': false
+  ),
+  'button': (
+    'size': #{14 / $hz-font-size-root}rem,
+    'weight': 500,
+    'line-height': 1.43,
+    'letter-spacing': -0.35px,
+    'font-family': $body-font-family,
+    'text-transform': uppercase
+  ),
+  'label':(
+    'size': #{14 / $hz-font-size-root}rem,
+    'weight': 700,
+    'line-height': 1.43,
+    'letter-spacing': -0.35px,
+    'font-family': $body-font-family,
+    'text-transform': false
+  ),
+);
+
+$material-light: (
+  // 'status-bar': (
+  //   'regular': #ECE9D5
+  // ),
+  // 'background': #FFFBE6,
+  // 'cards': rgba(185, 228, 201, .1),
+  'text': (
+    'primary': #495057,
+    'secondary': #868e96,
+    'disabled': #adb5bd
+  ),
+  'icons': (
+    'active': #868e96,
+    'inactive': rgba(map-get($shades, 'black'), 0.38)
+  ),
+  'text-fields': (
+    'outlined': #ced4da,
+    'outlined-hover': #ced4da
+  ),
+);
+
+
+$btn-sizes: (
+  'default': 32,
+  'x-large': 48
+);
+
+$btn-font-sizes: (
+  'large': 1rem,
+);
+// $tabs-bar-background-color: transparent;
+// $tabs-bar-height: 22px;
+// $tabs-item-vertical-height: 40px;
+// $tabs-item-letter-spacing: 0;
+
+$toolbar-content-padding-y: 0;
+
+$expansion-panel-active-header-min-height: 56px;
+$expansion-panel-header-padding: 16px 0;
+$expansion-panel-content-padding: 0;
+
+$fab-icon-sizes: (
+  'x-small': 18,
+  'small': 20,
+  'default': 24,
+  'large': 28,
+  'x-large': 32
+);
+
+$alert-outline: 2px solid currentColor;
+$alert-font-size: $hz-font-size;
+$alert-icon-margin: 8px;
+$alert-icon-size: 20px;
+
+$input-icon-size: 20px;
+
+$snackbar-background-color: map-get($hzc-gray, 'gray-80');
+$snackbar-content-font-size: $hz-font-size-root;
+$snackbar-content-font-weight: bold;
+
+$badge-dot-height: 6px;
+$badge-dot-width: 6px;
+$badge-dot-border-radius: 3px;

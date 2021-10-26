@@ -1,0 +1,30 @@
+{
+  "name": "haezoom-vuetify-preset",
+  "version": "1.0.0",
+  "description": "vuetify preset for haezoom",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/idnstory/vuetify-preset.git"
+  },
+  "keywords": [
+    "vuetify",
+    "preset",
+    "haezoom"
+  ],
+  "author": "Eric Hyung <kathar0s@haezoom.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idnstory/vuetify-preset/issues"
+  },
+  "homepage": "https://github.com/idnstory/vuetify-preset#readme",
+  "dependencies": {
+    "@vuetify/cli-plugin-utils": "^0.0.9"
+  }
+}

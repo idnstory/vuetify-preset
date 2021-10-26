@@ -1,0 +1,39 @@
+.v-text-field--outlined
+  &.v-input--is-disabled
+    & > .v-input__control > .v-input__slot
+      background-color: map-get($hzc-gray, 'gray-00')
+
+    fieldset
+      border-color: map-get($hzc-gray, 'gray-20')
+  &.v-input--is-readonly
+    & > .v-input__control > .v-input__slot
+      background-color: map-get($hzc-gray, 'gray-00')
+  // input field 안에 아이콘 사이즈 정의
+  .v-icon.v-icon
+    font-size: $input-icon-size
+
+.v-text-field
+  &.v-text-field--enclosed
+    .v-text-field__details
+      padding: 0 !important
+
+.v-input--selection-controls__ripple:before
+  border-radius: 4px
+  opacity: 0.1
+
+.v-input--selection-controls
+  &.v-input--is-focused,
+  .v-radio--is-focused
+    .v-input--selection-controls__ripple:before
+      background: currentColor
+      transform: scale(0.8)
+
+  .v-input--selection-controls__input:hover
+    .v-input--selection-controls__ripple:before
+      background: currentColor
+      transform: scale(0.8)
+      transition: none
+
+.theme--light.v-input--is-disabled input,
+.theme--light.v-input--is-disabled textarea
+  color: #adb5bd !important
