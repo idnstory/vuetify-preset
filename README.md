@@ -13,7 +13,7 @@ $ npm install @haezoom/vuetify-preset
 ```js
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
-import preset from "@haezoom/vuetify-preset";
+import { preset } from "@haezoom/vuetify-preset/preset";
 
 Vue.use(Vuetify);
 
