@@ -1,14 +1,8 @@
 {
-  "name": "haezoom-vuetify-preset",
-  "version": "1.0.0",
+  "name": "@haezoom/vuetify-preset",
+  "version": "1.0.2",
   "description": "vuetify preset for haezoom",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/idnstory/vuetify-preset.git"
