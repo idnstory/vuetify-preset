@@ -15,7 +15,8 @@ function injectSpoqaFontLink(api, font) {
 module.exports = (api) => {
   // 구글 폰트 연결하고 싶을 때
   // 참고: https://vuetifyjs.com/en/features/presets/#generator
-  generatePreset(api, "hz", () => {
+
+  generatePreset(api, "@haezoom/vuetify-preset/preset", () => {
     injectSpoqaFontLink(api, "Neo");
   });
 };
