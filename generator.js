@@ -4,19 +4,15 @@ const {
   generatePreset,
 } = require("@vuetify/cli-plugin-utils");
 
-function injectSpoqaFontLink(api, font) {
-  return injectHtmlLink(
-    api,
-    `https://cdn.haezoom.io/css/SpoqaHanSans${font}.css`,
-    'rel="stylesheet"',
-  );
-}
-
 module.exports = (api) => {
   // 구글 폰트 연결하고 싶을 때
   // 참고: https://vuetifyjs.com/en/features/presets/#generator
 
   generatePreset(api, "@haezoom/vuetify-preset/preset", () => {
-    injectSpoqaFontLink(api, "Neo");
+    return injectHtmlLink(
+      api,
+      `https://cdn.haezoom.io/css/SpoqaHanSansNeo.css`,
+      'rel="stylesheet"',
+    );
   });
 };
