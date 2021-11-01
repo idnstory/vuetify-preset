@@ -2,4 +2,7 @@
 import { injectSassVariables } from "@vuetify/cli-plugin-utils";
 
 export default (api) =>
-  injectSassVariables(api, "@haezoom/vuetify-preset/preset/variables.scss");
+  injectSassVariables(
+    api,
+    "@haezoom/vue-cli-plugin-vuetify-preset/preset/variables.scss",
+  );

@@ -8,7 +8,7 @@ module.exports = (api) => {
   // 구글 폰트 연결하고 싶을 때
   // 참고: https://vuetifyjs.com/en/features/presets/#generator
 
-  generatePreset(api, "@haezoom/vuetify-preset/preset", () => {
+  generatePreset(api, `'@haezoom/vue-cli-plugin-vuetify-preset/preset'`, () => {
     return injectHtmlLink(
       api,
       `https://cdn.haezoom.io/css/SpoqaHanSansNeo.css`,
