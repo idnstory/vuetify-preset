@@ -1,6 +1,6 @@
 {
   "name": "@haezoom/vue-cli-plugin-vuetify-preset",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "vuetify preset for haezoom",
   "main": "index.js",
   "repository": {
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/idnstory/vuetify-preset#readme",
   "dependencies": {
-    "@vuetify/cli-plugin-utils": "^0.0.9"
+    "@vuetify/cli-plugin-utils": "^0.0.10",
+    "lodash": "^4.17.21"
   },
   "private": false
 }
