@@ -1,6 +1,6 @@
 {
   "name": "@haezoom/vue-cli-plugin-vuetify-preset",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "vuetify preset for haezoom",
   "main": "index.js",
   "repository": {
